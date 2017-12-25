@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="index.html">Back to first page</a></p>
+    <h1>Insert your information here.</h1>
+    <form>
+        <fieldset>
+            <legend>Member Information</legend>
+            <label for="membername">Name</label>
+            <input type="TEXT">
+            <label for="memberage">Age</label>
+            <input type="TEXT">
+            <label for="memberemail">E-Mail</label>
+            <input type="TEXT">
+            <label for="membergender">Gender</label>
+            <input type="radio" name="gender">Male
+            <br>
+            <input type="radio" name="gender">Female
+            <label for="memberfavmovies">Favorite Movies Series</label>
+            <input type="checkbox" name="memberfavmovies" value="starwars">Star Wars<br>
+            <input type="checkbox" name="memberfavmovies" value="harrypotter">Harry Potter<br>
+            <input type="checkbox" name="memberfavmovies" value="jurassicpark">Jurassic Park<br>
+            <input type="checkbox" name="memberfavmovies" value="transformer">Transformer<br>
+            <input type="checkbox" name="memberfavmovies" value="mcu">Marvel Cinematic Universe<br>
+            <input type="checkbox" name="memberfavmovies" value="twilight">Twilight Saga
+            <label for="memberincome">Income</label>
+            <select name="memberincome">
+                <option value="">Select your Income</option>
+                <option value="<1000">Less than $1000</option>
+                <option value="<5000">between $1000 - $5000</option>
+                <option value="<10000">between $5001 - $10000</option>
+                <option value=">10000">More than $10000</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>
