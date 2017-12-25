@@ -30,6 +30,15 @@
             <!--Input Type Url-->
             <label for="memberurl">Link</label>
             <input type="url" name="memberurl" placeholder="http://example.domain">
+            <!--Input Datalist-->
+            <label for="membercity">City</label>
+            <input type="text" name="membercity" list="city">
+            <datalist id="city"> <!--Datalist should have "id" attribute and assume them as value in
+                                  "list" attribute on input tag-->
+                <option label="Tokyo" value="Tokyo"></option>
+                <option label="Bangkok" value="Bangkok"></option>
+                <option label="Seoul" value="Seoul"></option>
+            </datalist>
             <!--Input Type Password-->
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Filling your password" required>
@@ -55,6 +64,9 @@
                 <option value="<10000">between $5001 - $10000</option>
                 <option value=">10000">More than $10000</option>
             </select>
+            <!--Input Type Range-->
+            <label for="alonelv">Alone Level</label>
+            <input type="range" name="alonelv" min="1" max="5">
             <br><br>
             <!--Input Type Submit-->
             <input type="submit" value="Become a member">
