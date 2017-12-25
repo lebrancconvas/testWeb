@@ -3,11 +3,7 @@
 
 <head>
     <title>Member Information</title>
-    <style>
-        label {
-            display: block;
-        }
-    </style>
+    <link href="CSS/form.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -18,11 +14,25 @@
             <legend>Member Information</legend>
             <!--Input Type Text-->
             <label for="membername">Name</label>
-            <input type="TEXT">
+            <input type="TEXT" name="membername" required autofocus>
+            <!--Input Type Number-->
             <label for="memberage">Age</label>
-            <input type="TEXT">
+            <input type="number" name="memberage" min="13" max="40" step="1" value="13" required>
+            <!--Input Type Date-->
+            <label for="memberdateofbirth">Date of Birth</label>
+            <input type="date" name="memberdateofbirth" required>
+            <!--Input Type Email-->
             <label for="memberemail">E-Mail</label>
-            <input type="TEXT">
+            <input type="email" name="memberemail" placeholder="example@gmail.com" required>
+            <!--Input Type Tel-->
+            <label for="membertel">Telephone Number</label>
+            <input type="tel" name="membertel" placeholder="08x-xxxxxxx" required>
+            <!--Input Type Url-->
+            <label for="memberurl">Link</label>
+            <input type="url" name="memberurl" placeholder="http://example.domain">
+            <!--Input Type Password-->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Filling your password" required>
             <!--Input Type Radio-->
             <label for="membergender">Gender</label>
             <input type="radio" name="gender">Male
@@ -45,6 +55,11 @@
                 <option value="<10000">between $5001 - $10000</option>
                 <option value=">10000">More than $10000</option>
             </select>
+            <br><br>
+            <!--Input Type Submit-->
+            <input type="submit" value="Become a member">
+            <!--Input Type Reset-->
+            <input type="reset" value="Clear all information">
         </fieldset>
     </form>
 </body>
