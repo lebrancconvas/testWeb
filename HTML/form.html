@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Information</title>
+    <title>Member Information</title>
     <style>
         label {
             display: block;
@@ -16,16 +16,19 @@
     <form>
         <fieldset>
             <legend>Member Information</legend>
+            <!--Input Type Text-->
             <label for="membername">Name</label>
             <input type="TEXT">
             <label for="memberage">Age</label>
             <input type="TEXT">
             <label for="memberemail">E-Mail</label>
             <input type="TEXT">
+            <!--Input Type Radio-->
             <label for="membergender">Gender</label>
             <input type="radio" name="gender">Male
             <br>
             <input type="radio" name="gender">Female
+            <!--Input Type Checkbox-->
             <label for="memberfavmovies">Favorite Movies Series</label>
             <input type="checkbox" name="memberfavmovies" value="starwars">Star Wars<br>
             <input type="checkbox" name="memberfavmovies" value="harrypotter">Harry Potter<br>
@@ -33,6 +36,7 @@
             <input type="checkbox" name="memberfavmovies" value="transformer">Transformer<br>
             <input type="checkbox" name="memberfavmovies" value="mcu">Marvel Cinematic Universe<br>
             <input type="checkbox" name="memberfavmovies" value="twilight">Twilight Saga
+            <!--Input Type Select Dropdown-->
             <label for="memberincome">Income</label>
             <select name="memberincome">
                 <option value="">Select your Income</option>
