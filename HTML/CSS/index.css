@@ -1,0 +1,15 @@
+body {
+    background-color: darkcyan;
+}
+
+iframe {
+    width: 400px;
+    height: 250px;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
