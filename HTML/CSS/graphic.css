@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+}
+
+svg {
+    align-items: center;
+    background-color: pink;
+    width: 630px;
+    height: 180px;
+}
